@@ -19,7 +19,9 @@ app.use((req, res, next) => {
     next();
 });
 
-
+app.get('/api', (req, res, next) => {
+    res.send('API Status: I\'m awesome')
+});
 
 app.post('/api/email', (req, res, next) => {
 
@@ -52,4 +54,5 @@ app.post('/api/email', (req, res, next) => {
 });
 
 // || port
+console.log(process.env.PORT);
 app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`)); 
