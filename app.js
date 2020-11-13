@@ -1,11 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const port = 3000;
 const sendGrid = require('@sendGrid/mail');
 const app = express();
 
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
-app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log('Express server listening on port', port)
+});
