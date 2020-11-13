@@ -21,12 +21,4 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
-app.get('/api', (req, res, next) => {
-    res.send('API Status: I\'m awesome')
-});
-
-
-
-// || port
-console.log(process.env.PORT);
 app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`)); 
