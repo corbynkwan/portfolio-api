@@ -52,4 +52,4 @@ app.post('/api/email', (req, res, next) => {
 });
 
 // || port
-app.listen(port = process.env.PORT || 80, '0.0.0.0');
+app.listen(port = process.env.PORT || 80);
