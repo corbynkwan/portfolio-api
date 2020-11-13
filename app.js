@@ -19,6 +19,8 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/', (req, res) => res.send('Hello World!'));
+
 app.get('/api', (req, res, next) => {
     res.send('API Status: I\'m awesome')
 });
