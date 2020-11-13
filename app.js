@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const port = 303   0;
+const port = 3030;
 const sendGrid = require('@sendGrid/mail');
 
 
